@@ -25,15 +25,15 @@ scrolling:
 
 font:
   normal:
-    #family: "NotoSansMono Nerd Font"
+    family: "Iosevka Nerd Font"
     #family: "Droid Sans Mono for Powerline"
-    family: "Iosevka"
+    #family: "Iosevka"
   bold:
     #family: "NotoSansMono Nerd Font"
-    family: "Iosevka"
+    family: "Iosevka Nerd Font"
     style: Bold
   italic:
-    family: "Iosevka"
+    family: "Iosevka Nerd Font"
     style: Italic
   size: 12
   offset:
@@ -45,8 +45,9 @@ font:
 
 colors:
   primary:
-    background: '0x181414'
+    #background: '0x181414'
     #background: '0x1c2135'
+    background: '0x171228'
     foreground: '0xECFEFA'
 
   normal:

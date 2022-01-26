@@ -53,9 +53,11 @@
 ### Output configuration
     # Monitor configuration
     output HDMI-A-2 resolution 2560x1440 position 0,0
+    # output HDMI-A-2 disable
     output eDP-1 disable
+    # output eDP-1 resolution 1920x1080 position 0,0
     # Wallpaper
-    output * bg ~/pic/backgrounds/bridge.jpg fill
+    output * bg ~/pic/backgrounds/nightbridge.jpg fill
 
 ### Input configuration
     # Switch to British keyboard with colemak configuration.
@@ -166,4 +168,4 @@
 include /etc/sway/config.d/*
 
 ### Play start up sound after loading
-    exec_always sleep 2 && cvlc ~/mus/Linux21.mp3 --play-and-exit --no-dbus
+    exec sleep 2 && cvlc ~/mus/Linux21.mp3 --play-and-exit --no-dbus
