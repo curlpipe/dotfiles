@@ -12,12 +12,12 @@
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 35, // Waybar height (to be removed for auto height)
-    "width": 1280, // Waybar width
+    "width": 1920, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": [],
-    "modules-right": ["battery", "battery#bat2", "clock"],
+    "modules-right": ["custom/xbps", "battery", "battery#bat2", "clock"],
     "sway/mode": {
         "format": "<span>{}</span>"
     },
@@ -51,5 +51,13 @@
         },
         "escape": true,
         "exec": "python ~/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+    },
+    "custom/xbps": {
+        "format": "  {} ",
+        "interval": 3600,                     // every hour
+        "exec": "sh ~/.config/waybar/check_updates.sh",       // # of updates
+        "exec-if": "exit 0",                  // always run; consider advanced run conditions
+        "on-click": "alacritty -e 'update'; pkill -SIGRTMIN+8 waybar", // update system
+        "signal": 8
     }
 }

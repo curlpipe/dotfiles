@@ -18,6 +18,10 @@ window:
   dynamic_padding: true
   decorations: none
   dynamic_title: false
+  opacity: 0.7
+  #opacity: 0.9
+  #opacity: 0.6
+
 
 scrolling:
   history: 10000
@@ -25,29 +29,32 @@ scrolling:
 
 font:
   normal:
-    family: "Iosevka Nerd Font"
-    #family: "Droid Sans Mono for Powerline"
-    #family: "Iosevka"
+    family: "MesloLGM Nerd Font"
+    #family: "Caskaydia Cove Nerd Font"
+    #family: "Iosevka Nerd Font"
   bold:
-    #family: "NotoSansMono Nerd Font"
-    family: "Iosevka Nerd Font"
+    family: "MesloLGM Nerd Font"
+    #family: "Caskaydia Cove Nerd Font"
+    #family: "Iosevka Nerd Font"
     style: Bold
   italic:
-    family: "Iosevka Nerd Font"
+    family: "MesloLGM Nerd Font"
+    #family: "Caskaydia Cove Nerd Font"
+    #family: "Iosevka Nerd Font"
     style: Italic
-  size: 12
+  size: 10.5
   offset:
     x: 0
-    y: -1
+    y: 0
   glyph_offset:
     x: 0
     y: 0
 
 colors:
   primary:
-    #background: '0x181414'
+    background: '0x181414'
     #background: '0x1c2135'
-    background: '0x171228'
+    #background: '0x171228'
     foreground: '0xECFEFA'
 
   normal:
@@ -76,10 +83,6 @@ bell:
   animation: EaseOutExpo
   duration: 0
   color: '0xffffff'
-
-background_opacity: 0.7
-#background_opacity: 0.9
-#background_opacity: 0.6
 
 hints:
   url:

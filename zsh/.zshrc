@@ -48,8 +48,10 @@
     # Prompt format
     #PS1='\033[38;5;203m\u@\h \033[38;5;202m\w \033[38;5;172m⚡» \033[38;5;255m'
     setopt PROMPT_SUBST
-    #PROMPT='%F{203}%n@%m %F{202}${(%):-%~} %F{172}⚡» %F{white}'
-    PROMPT='%F{203}%n %F{202}${(%):-%~} %F{172}⚡» %F{white}'
+    PROMPT='%F{203}%n@%m %F{202}${(%):-%~} %F{172}⚡» %F{white}'
+    #PROMPT='%F{203}%n %F{202}${(%):-%~} %F{172}⚡» %F{white}'
+    #PROMPT='%F{172}⚡» %F{white}'
+    #PROMPT='%F{203}%F{202}${(%):-%~} %F{172}⚡» %F{white}'
 
 ### Add SSH and GPG keys
     eval "$(ssh-agent -s)" > /dev/null && ssh-add -q ~/.ssh/id_github
@@ -62,6 +64,7 @@
 
 ### Extend path
     export PATH=~/.local/bin:$PATH
+    export PATH_TO_FX=~/dev/java/jfx/javafx-sdk-17/lib
 
 ## Rust
     source "$HOME/.cargo/env"

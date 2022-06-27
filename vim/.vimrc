@@ -116,12 +116,10 @@
             Plug 'jiangmiao/auto-pairs'
             " Wayland clipboard
             Plug 'jasonccox/vim-wayland-clipboard'
-            " Rust langauge support
-            Plug 'rust-lang/rust.vim'
-            " Autocomplete
-            Plug 'tabnine/YouCompleteMe'
             " Ron syntax highlighting
             Plug 'ron-rs/ron.vim'
+            " Vim todo lists
+            Plug 'aserebryakov/vim-todo-lists'
             call plug#end()
     "" Auto complete
         set encoding=utf-8
